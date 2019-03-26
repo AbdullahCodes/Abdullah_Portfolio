@@ -1,0 +1,133 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	/* background-color: lightyellow; */
+
+}
+ul{
+	padding:0px;
+}
+li{
+	list-style: none;
+}
+
+
+header{
+	/* background-color: lightblue; */
+	display: grid;
+	grid-gap: 0px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 0.6fr 1fr 0.5fr;
+}
+
+
+.proPic{
+	position: relative;
+	background-image: url("../img/propic.jpg");
+	background-position:center;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.proPic h3{
+	color:white;
+	position: absolute;
+	bottom:-7px;
+	background-color: darkslateblue;
+	width:100%;
+	padding:10px ;
+}
+
+.skills h4, .languages h4,.trainings h4, .education h4{
+	background-color: #483D8B;
+	color:white;
+	padding:5px 10px;
+
+}
+
+.contactMe ul,.skills ul,.languages ul,.proPic{
+	height: 100%;
+}
+
+.contactMe ul,.skills {
+	/* background-color: lightgreen; */
+	padding:0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.contactMe h5{
+	font-weight: 400;
+}
+.languages{
+	/* background-color: lightyellow; */
+}
+
+.contactMe ul li{
+	padding:0px 25px;
+}
+.skills ul li,.languages ul li {
+	padding:7px 25px;
+}
+
+.contactMe img{
+	width:25px;
+}
+
+.skills img,.languages img,.trainings img,.education img{
+	width:35px;
+}
+
+
+main{
+	display: flex;
+	flex-direction: column;
+}
+
+hr{
+	width: 90%;
+	background-color:darkslateblue;
+}
+
+.trainings h5{
+padding-left:5px;
+color:darkslateblue;
+font-weight: 550;
+}
+
+#internships,#onlineLearning,#personalProjects{
+	padding-left:20px;
+}
+
+
+
+footer{
+	background-color: darkslateblue;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+@media (min-width:600px){
+	header{
+		width:30%;
+		margin-left:1%;
+		margin-top:1px;
+		position: absolute;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 0.7fr 1fr 0.5fr;
+		box-shadow: 5px 5px 10px black;
+	}
+	main,.subMain{
+		margin-top:10px;
+		width:65%;
+		height: 400px;
+		margin-left:34%;
+		box-shadow: 5px 5px 10px black;
+
+	}
+}
